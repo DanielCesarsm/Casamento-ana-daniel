@@ -595,7 +595,7 @@ async function fetchSummary(){
   return (data && data.ok) ? data.rows : [];
 }
 
-const GROUPS = [{"number": 1, "code": "XKP742", "members": ["Tia Fofa", "Rafael", "Pai de Rafael"]}, {"number": 2, "code": "BRT109", "members": ["Tia Silvana"]}, {"number": 3, "code": "MVD853", "members": ["Leninha", "Ronaldo"]}, {"number": 4, "code": "ZLN621", "members": ["Débora", "Maurício", "Marília", "Dona neném"]}, {"number": 5, "code": "HFC394", "members": ["Luciana", "Ester Luisa", "WAllison"]}, {"number": 6, "code": "QWG817", "members": ["Patrícia", "André", "Daniela"]}, {"number": 7, "code": "JTR506", "members": ["Hugo", "Estéfane"]}, {"number": 8, "code": "PYM238", "members": ["Richard", "Luciana", "Arthur", "Laura"]}, {"number": 9, "code": "WLS941", "members": ["Tia Roseane", "Tio Marinho", "Ester", "Manuel", "Elias", "Murilo"]}, {"number": 10, "code": "KDX715", "members": ["Tia Rosana", "Fábio"]}, {"number": 11, "code": "BZN482", "members": ["Ricardson", "Karina"]}, {"number": 12, "code": "TGV360", "members": ["Lucas Marinho"]}, {"number": 13, "code": "RLC829", "members": ["Davi", "Jaqueline"]}, {"number": 14, "code": "FJP513", "members": ["Francy"]}, {"number": 15, "code": "NMQ674", "members": ["Marcelo", "Thaiane"]}, {"number": 16, "code": "VSK208", "members": ["Camyla", "Luan"]}, {"number": 17, "code": "GHD935", "members": ["Gustavo", "Alícia"]}, {"number": 18, "code": "YCB147", "members": ["Thallys", "Ray"]}, {"number": 19, "code": "XTW862", "members": ["Ir. Ewerson", "Fabrícia", "Elias", "Estevão", "Esther Emilly"]}, {"number": 20, "code": "LRP419", "members": ["Ev. Levi", "Nalvinha"]}, {"number": 21, "code": "MDN583", "members": ["Ir. Manassés", "Laudeci"]}, {"number": 22, "code": "ZKG726", "members": ["PB. Mizael", "Kátia"]}, {"number": 23, "code": "HVT304", "members": ["DC Márcio", "Solange"]}, {"number": 24, "code": "BQC951", "members": ["DC Carlos", "Sandra"]}, {"number": 25, "code": "WFM168", "members": ["DC Barbosa", "Socorro"]}, {"number": 26, "code": "JXN832", "members": ["João Leandro", "Taina"]}, {"number": 27, "code": "PKL275", "members": ["Mateus", "Mari"]}, {"number": 28, "code": "YRD640", "members": ["Irmã Nadir"]}, {"number": 29, "code": "CTS914", "members": ["Ester Lima"]}, {"number": 30, "code": "MXV528", "members": ["Diego"]}, {"number": 31, "code": "RZN391", "members": ["Ir. Dioclécio", "Ana Calaça"]}, {"number": 32, "code": "FHB706", "members": ["Ir. Gerusa", "Ir. Paulo"]}, {"number": 33, "code": "GKP452", "members": ["Ir. Cleide"]}, {"number": 34, "code": "VWC189", "members": ["Ir. Lucilene"]}, {"number": 35, "code": "TMB863", "members": ["Ir. Adilma"]}, {"number": 36, "code": "QJD247", "members": ["Cabral", "Gislayne"]}, {"number": 37, "code": "ZLP630", "members": ["Cintya", "Wellington"]}, {"number": 38, "code": "HKX571", "members": ["Lindomar"]}, {"number": 39, "code": "WNR804", "members": ["Dayana Marinho"]}, {"number": 40, "code": "KVP914", "members": ["Tia beta", "Thallytha", "Thaysa", "Thalya", "Tio Samu"]}, {"number": 41, "code": "BTR803", "members": ["Tio Miguel", "Lu"]}, {"number": 42, "code": "MXD257", "members": ["Pri", "Jônatas"]}, {"number": 43, "code": "ZLN641", "members": ["Jô", "Tirony"]}, {"number": 44, "code": "HFC198", "members": ["Bibi", "Dani"]}, {"number": 45, "code": "QWG523", "members": ["Tetê", "Carol"]}, {"number": 46, "code": "JTR409", "members": ["Daia", "Vado", "Duda", "Leonardo", "Lipe"]}, {"number": 47, "code": "PYM831", "members": ["Neto", "Mirele", "Tainá"]}, {"number": 48, "code": "WLS762", "members": ["Thalita", "Davi"]}, {"number": 49, "code": "KDX340", "members": ["Tio Isaac", "Tia Lila", "Juninho", "Samara"]}, {"number": 50, "code": "BZN915", "members": ["Primo", "Fia", "Lene"]}, {"number": 51, "code": "TGV682", "members": ["Duda", "Merinha"]}, {"number": 52, "code": "RLC529", "members": ["Gi", "Magão", "Nat", "Nana"]}, {"number": 53, "code": "FJP174", "members": ["Tia Fernanda", "Joaquim"]}, {"number": 54, "code": "NMQ803", "members": ["Fatinha"]}, {"number": 55, "code": "VSK491", "members": ["Lipe", "Thaís"]}, {"number": 56, "code": "GHD236", "members": ["Irmão Wellington", "Irmã Marcia", "Lili", "Rafael"]}, {"number": 57, "code": "YCB852", "members": ["Fernanda", "Nathan"]}, {"number": 58, "code": "XTW317", "members": ["Flai"]}, {"number": 59, "code": "LRP604", "members": ["Jana", "Edson"]}, {"number": 60, "code": "MDN948", "members": ["Mema", "Tio Torquato"]}, {"number": 61, "code": "ZKG153", "members": ["Marcelia", "Ir. Álvaro"]}, {"number": 62, "code": "HVT720", "members": ["Gilberto", "Cristiane"]}, {"number": 63, "code": "BQC864", "members": ["Ana", "Hilton", "Carol"]}, {"number": 64, "code": "WFM391", "members": ["Ronir", "Sandrinha", "Dona Nete"]}, {"number": 65, "code": "JXN507", "members": ["Thaina", "Weidson", "Matheus", "Maria Luiza"]}, {"number": 66, "code": "PKL982", "members": ["Geisiane", "Lucas Nascimento"]}, {"number": 67, "code": "YRD416", "members": ["Ir. Thiago", "Juliana"]}, {"number": 68, "code": "MCN735", "members": ["Quétima", "Quívia"]}, {"number": 69, "code": "HSY269", "members": ["Ir. Karla", "Ir. Beto"]}, {"number": 70, "code": "BKD841", "members": ["Di", "Ev. Daniel"]}, {"number": 71, "code": "WTL514", "members": ["Jô", "Eudenes"]}, {"number": 72, "code": "PZF930", "members": ["Pr. Wellington", "Keyla"]}, {"number": 73, "code": "XGR682", "members": ["Pr. Isaac", "Vera"]}, {"number": 74, "code": "LKM175", "members": ["Pr. Junior", "Cristiane"]}, {"number": 75, "code": "CYN428", "members": ["Pr. Ailton", "Judite"]}, {"number": 76, "code": "GJH903", "members": ["Pr. Samuel", "Saronita"]}, {"number": 77, "code": "RVB361", "members": ["Ev. Eliel Alves", "Jesana"]}, {"number": 78, "code": "KWT824", "members": ["Pb. Vicson", "Adriana"]}, {"number": 79, "code": "ZMD519", "members": ["Ir. Moisés", "Cilene"]}, {"number": 80, "code": "FBP746", "members": ["Carla", "Antônio"]}, {"number": 81, "code": "TLN283", "members": ["Bibi", "Abner"]}, {"number": 82, "code": "HCR605", "members": ["Jamilly", "Douglas"]}];
+const GROUPS = [{"number": 1, "code": "XKP742", "members": ["Tia Fofa", "Rafael", "Pai de Rafael"]}, {"number": 2, "code": "BRT109", "members": ["Tia Silvana"]}, {"number": 3, "code": "MVD853", "members": ["Leninha", "Ronaldo"]}, {"number": 4, "code": "ZLN621", "members": ["Débora", "Maurício", "Marília", "Dona neném"]}, {"number": 5, "code": "HFC394", "members": ["Luciana", "Ester Luisa", "WAllison"]}, {"number": 6, "code": "QWG817", "members": ["Patrícia", "André", "Daniela"]}, {"number": 7, "code": "JTR506", "members": ["Hugo", "Estéfane"]}, {"number": 8, "code": "PYM238", "members": ["Richard", "Luciana", "Arthur", "Laura"]}, {"number": 9, "code": "WLS941", "members": ["Tia Roseane", "Tio Marinho", "Ester", "Manuel", "Elias", "Murilo"]}, {"number": 10, "code": "KDX715", "members": ["Tia Rosana", "Fábio"]}, {"number": 11, "code": "BZN482", "members": ["Ricardson", "Karina"]}, {"number": 12, "code": "TGV360", "members": ["Lucas Marinho"]}, {"number": 13, "code": "RLC829", "members": ["Davi", "Jaqueline"]}, {"number": 14, "code": "FJP513", "members": ["Francy"]}, {"number": 15, "code": "NMQ674", "members": ["Marcelo", "Thaiane"]}, {"number": 16, "code": "VSK208", "members": ["Camyla", "Luan"]}, {"number": 17, "code": "GHD935", "members": ["Gustavo", "Alícia"]}, {"number": 18, "code": "YCB147", "members": ["Thallys", "Ray"]}, {"number": 19, "code": "XTW862", "members": ["Ir. Ewerson", "Fabrícia", "Elias", "Estevão", "Esther Emilly"]}, {"number": 20, "code": "LRP419", "members": ["Ev. Levi", "Nalvinha"]}, {"number": 21, "code": "MDN583", "members": ["Ir. Manassés", "Laudeci"]}, {"number": 22, "code": "ZKG726", "members": ["PB. Mizael", "Kátia"]}, {"number": 23, "code": "HVT304", "members": ["DC Márcio", "Solange"]}, {"number": 24, "code": "BQC951", "members": ["DC Carlos", "Sandra"]}, {"number": 25, "code": "WFM168", "members": ["DC Barbosa", "Socorro"]}, {"number": 26, "code": "JXN832", "members": ["João Leandro", "Taina"]}, {"number": 27, "code": "PKL275", "members": ["Mateus", "Mari"]}, {"number": 28, "code": "YRD640", "members": ["Irmã Nadir"]}, {"number": 29, "code": "CTS914", "members": ["Ester Lima"]}, {"number": 30, "code": "MXV528", "members": ["Diego"]}, {"number": 31, "code": "RZN391", "members": ["Ir. Dioclécio", "Ana Calaça"]}, {"number": 32, "code": "FHB706", "members": ["Ir. Gerusa", "Ir. Paulo"]}, {"number": 33, "code": "GKP452", "members": ["Ir. Cleide"]}, {"number": 34, "code": "VWC189", "members": ["Ir. Lucilene"]}, {"number": 35, "code": "TMB863", "members": ["Ir. Adilma"]}, {"number": 36, "code": "QJD247", "members": ["Cabral", "Gislayne"]}, {"number": 37, "code": "ZLP630", "members": ["Cintya", "Wellington"]}, {"number": 38, "code": "HKX571", "members": ["Lindomar"]}, {"number": 39, "code": "WNR804", "members": ["Dayana Marinho"]}, {"number": 40, "code": "KVP914", "members": ["Tia beta", "Thallytha", "Thaysa", "Thalya", "Tio Samu"]}, {"number": 41, "code": "BTR803", "members": ["Tio Miguel", "Lu"]}, {"number": 42, "code": "MXD257", "members": ["Pri", "Jônatas"]}, {"number": 43, "code": "ZLN641", "members": ["Jô", "Tirony"]}, {"number": 44, "code": "HFC198", "members": ["Bibi", "Dani"]}, {"number": 45, "code": "QWG523", "members": ["Tetê", "Carol"]}, {"number": 46, "code": "JTR409", "members": ["Daia", "Vado", "Duda", "Leonardo", "Lipe"]}, {"number": 47, "code": "PYM831", "members": ["Neto", "Mirele", "Tainá"]}, {"number": 48, "code": "WLS762", "members": ["Thalita", "Davi"]}, {"number": 49, "code": "KDX340", "members": ["Tio Isaac", "Tia Lila", "Juninho", "Samara"]}, {"number": 50, "code": "BZN915", "members": ["Primo", "Fia", "Lene"]}, {"number": 51, "code": "TGV682", "members": ["Duda", "Merinha"]}, {"number": 52, "code": "RLC529", "members": ["Gi", "Magão", "Nat", "Nana"]}, {"number": 53, "code": "FJP174", "members": ["Tia Fernanda", "Joaquim"]}, {"number": 54, "code": "NMQ803", "members": ["Fatinha"]}, {"number": 55, "code": "VSK491", "members": ["Lipe", "Thaís"]}, {"number": 56, "code": "GHD236", "members": ["Irmão Wellington", "Irmã Marcia", "Lili", "Rafael"]}, {"number": 57, "code": "YCB852", "members": ["Fernanda", "Nathan"]}, {"number": 58, "code": "XTW317", "members": ["Flai"]}, {"number": 59, "code": "LRP604", "members": ["Jana", "Edson"]}, {"number": 60, "code": "MDN948", "members": ["Mema", "Tio Torquato"]}, {"number": 61, "code": "ZKG153", "members": ["Marcelia", "Ir. Álvaro"]}, {"number": 62, "code": "HVT720", "members": ["Gilberto", "Cristiane"]}, {"number": 63, "code": "BQC864", "members": ["Ana", "Hilton", "Carol"]}, {"number": 64, "code": "WFM391", "members": ["Ronir", "Sandrinha", "Dona Nete"]}, {"number": 65, "code": "JXN507", "members": ["Thaina", "Weidson", "Matheus", "Maria Luiza"]}, {"number": 66, "code": "PKL982", "members": ["Geisiane", "Lucas Nascimento"]}, {"number": 67, "code": "YRD416", "members": ["Ir. Thiago", "Juliana"]}, {"number": 68, "code": "MCN735", "members": ["Quétima", "Quívia"]}, {"number": 69, "code": "HSY269", "members": ["Ir. Karla", "Ir. Beto"]}, {"number": 70, "code": "BKD841", "members": ["Di", "Ev. Daniel"]}, {"number": 71, "code": "WTL514", "members": ["Jô", "Eudenes"]}, {"number": 72, "code": "PZF930", "members": ["Pr. Wellington", "Keyla"]}, {"number": 73, "code": "XGR682", "members": ["Pr. Isaac", "Vera"]}, {"number": 74, "code": "LKM175", "members": ["Pr. Junior", "Cristiane"]}, {"number": 75, "code": "CYN428", "members": ["Pr. Ailton", "Judite"]}, {"number": 76, "code": "GJH903", "members": ["Pr. Samuel", "Saronita"]}, {"number": 77, "code": "RVB361", "members": ["Ev. Eliel Alves", "Jesana"]}, {"number": 78, "code": "KWT824", "members": ["Pb. Vicson", "Adriana"]}, {"number": 79, "code": "ZMD519", "members": ["Ir. Moisés", "Cilene"]}, {"number": 80, "code": "FBP746", "members": ["Carla", "Antônio"]}, {"number": 81, "code": "TLN283", "members": ["Bibi", "Abner"]}, {"number": 82, "code": "HCR605", "members": ["Jamilly", "Douglas"]}, {"number": 83, "code": "U21IJJ", "members": ["Neuzinha", "Adriano"]}];
 
 const CODE_MAP = {};
 GROUPS.forEach(g => { CODE_MAP[g.code.toUpperCase()] = g; });
@@ -612,9 +612,26 @@ function hideMsg(el){
   el.innerHTML = '';
 }
 
-const ADMIN_CODE = 'ANADANIEL2026';
+// A senha de administrador não fica mais escrita aqui. A cada tentativa,
+// o site pergunta ao Google Apps Script (que consulta a célula da
+// planilha) se a senha digitada está correta -- ela nunca trafega em
+// texto puro no código-fonte da página.
+async function checkAdminPassword(password){
+  try{
+    const res = await fetch(APPS_SCRIPT_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ action: 'checkAdmin', password: password })
+    });
+    const data = await res.json();
+    return !!(data && data.ok && data.valid);
+  } catch(e){
+    console.error(e);
+    return false;
+  }
+}
 
-// A partir dessa data (hor\u00e1rio de Bras\u00edlia), o formul\u00e1rio n\u00e3o aceita mais novas confirma\u00e7\u00f5es de convidados.
+// A partir dessa data (horário de Brasília), o formulário não aceita mais novas confirmações de convidados.
 const RSVP_DEADLINE = new Date('2026-10-10T00:00:00-03:00');
 function isPastDeadline(){
   return new Date().getTime() >= RSVP_DEADLINE.getTime();
@@ -625,8 +642,8 @@ async function verifyCode(){
   const codeMsg = document.getElementById('codeMsg');
   hideMsg(codeMsg);
 
-  // normaliza mas preserva um \u00fanico espa\u00e7o, para permitir o modo
-  // administrador "ADMIN CODIGO" confirmar em nome de algu\u00e9m ap\u00f3s o prazo
+  // preserva maiúsculas/minúsculas exatas (a senha faz diferença),
+  // só remove espaços nas pontas e reduz espaços internos a um só
   const raw = (input.value || '').trim().toUpperCase().replace(/\s+/g, ' ');
 
   if(!raw){
@@ -634,7 +651,41 @@ async function verifyCode(){
     return;
   }
 
-  if(raw === ADMIN_CODE){
+  const parts = raw.split(' ');
+
+  // "senha código" -> modo administrador confirmando por alguém,
+  // funciona mesmo depois do prazo encerrado
+  if(parts.length === 2){
+    const isAdmin = await checkAdminPassword(parts[0]);
+    if(isAdmin){
+      const overrideGroup = CODE_MAP[parts[1].toUpperCase()];
+      if(!overrideGroup){
+        showMsg(codeMsg, 'error', '⚠️ Código não encontrado. Confira o código impresso no seu convite e tente novamente.');
+        document.getElementById('step-group').classList.add('hidden');
+        currentGroup = null;
+        return;
+      }
+      currentGroup = overrideGroup;
+      answers = {};
+      renderMembers(overrideGroup);
+      document.getElementById('groupCodeLabel').textContent = overrideGroup.code;
+      document.getElementById('step-code').classList.add('hidden');
+      document.getElementById('step-admin').classList.add('hidden');
+      document.getElementById('step-group').classList.remove('hidden');
+      hideMsg(document.getElementById('groupMsg'));
+      document.getElementById('sendBtn').disabled = false;
+      await loadExisting(overrideGroup);
+      return;
+    }
+    showMsg(codeMsg, 'error', '⚠️ Código não encontrado. Confira o código impresso no seu convite e tente novamente.');
+    document.getElementById('step-group').classList.add('hidden');
+    currentGroup = null;
+    return;
+  }
+
+  // só uma palavra: pode ser a senha do administrador...
+  const isAdminOnly = await checkAdminPassword(raw);
+  if(isAdminOnly){
     document.getElementById('step-code').classList.add('hidden');
     document.getElementById('step-group').classList.add('hidden');
     document.getElementById('step-admin').classList.remove('hidden');
@@ -642,16 +693,8 @@ async function verifyCode(){
     return;
   }
 
-  // modo de override do administrador: "ANADANIEL2026 XKP742" confirma
-  // presença de um grupo específico mesmo depois do prazo encerrado
-  let overrideMode = false;
-  let lookupCode = raw;
-  if(raw.startsWith(ADMIN_CODE + ' ')){
-    overrideMode = true;
-    lookupCode = raw.slice(ADMIN_CODE.length + 1).trim();
-  }
-
-  const group = CODE_MAP[lookupCode];
+  // ...ou o código de um grupo de convidados
+  const group = CODE_MAP[raw.toUpperCase()];
   if(!group){
     showMsg(codeMsg, 'error', '⚠️ Código não encontrado. Confira o código impresso no seu convite e tente novamente.');
     document.getElementById('step-group').classList.add('hidden');
@@ -659,7 +702,7 @@ async function verifyCode(){
     return;
   }
 
-  if(!overrideMode && isPastDeadline()){
+  if(isPastDeadline()){
     showMsg(codeMsg, 'error', 'Infelizmente você perdeu o período de confirmação, e sua Vaga foi Cancelada e destinada para outro convidado.');
     document.getElementById('step-group').classList.add('hidden');
     currentGroup = null;
@@ -881,7 +924,6 @@ document.getElementById('codeInput').addEventListener('keydown', function(e){
 document.getElementById('codeInput').addEventListener('input', function(e){
   e.target.value = e.target.value.toUpperCase();
 });
-
 
 /* ---------- Galeria com visualização ampliada ---------- */
 const galleryImgs = Array.from(document.querySelectorAll('.gallery figure img'));
